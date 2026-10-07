@@ -32,11 +32,21 @@ export function homePage() {
               <span>Serving ${SITE.reach}</span>
             </p>
           </div>
-          <div class="hero__diagram" aria-hidden="true">
+          <div class="hero__diagram">
+            <p class="sr-only">Organisation connects to FINA, which connects to Talent.</p>
             <div class="relation-card">
-              <span>Organisation</span>
-              <span class="relation-card__mid">FINA</span>
-              <span>Talent</span>
+              <a class="relation-node" href="#employer">
+                <span class="relation-node__label">Organisation</span>
+                <span class="relation-node__hint">Hiring &amp; HR needs</span>
+              </a>
+              <a class="relation-node relation-node--fina" href="#about-preview">
+                <span class="relation-node__label">FINA</span>
+                <span class="relation-node__hint">Talent + HR solutions</span>
+              </a>
+              <a class="relation-node" href="#candidate">
+                <span class="relation-node__label">Talent</span>
+                <span class="relation-node__hint">Career opportunities</span>
+              </a>
             </div>
             <p class="relation-caption">Need → Match → Interview → Opportunity</p>
           </div>
