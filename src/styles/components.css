@@ -399,17 +399,21 @@
 
 @media (max-width: 640px) {
   .relation-card {
-    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    padding: 0.9rem 0.65rem;
   }
 
-  .relation-card::before {
-    left: 50%;
-    right: auto;
-    top: 12%;
-    bottom: 12%;
-    width: 1px;
-    height: auto;
-    background: linear-gradient(180deg, transparent, var(--color-accent-soft), var(--color-accent), var(--color-accent-soft), transparent);
+  .relation-node {
+    min-height: 4.4rem;
+    padding: 0.55rem 0.4rem;
+  }
+
+  .relation-node__label {
+    font-size: 0.82rem;
+  }
+
+  .relation-node__hint {
+    font-size: 0.62rem;
   }
 
   .relation-node--fina,
