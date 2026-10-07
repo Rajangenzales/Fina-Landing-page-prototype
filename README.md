@@ -42,7 +42,7 @@ Any static host works; configure SPA fallback so all routes serve `index.html`.
 
 - Forms do not POST to a server (wire to your API, Formspree, or serverless handler for production).
 - Resume files are validated locally only.
-- Replace founder portrait placeholder and connect approved logo assets before launch.
+- Logo and founder portrait live in `public/images/` (`fina-logo.jpg`, `hima-ferin.jpg`).
 - Update `hello@finaconsultancy.in` when the domain is registered.
 
 ## Analytics

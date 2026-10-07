@@ -15,17 +15,27 @@ export function aboutPage() {
         </div>
       </section>
       <section class="section">
-        <div class="container narrow">
-          <h2>Our focus</h2>
-          <p>
-            FINA Consultancy is founded by ${SITE.founder} and based in ${SITE.location}. We work with
-            employers who need talent acquisition and HR support, and with candidates seeking structured
-            pathways toward suitable opportunities.
-          </p>
-          <p>
-            Our positioning is simple: <strong>${SITE.positioning}</strong>. The philosophy behind our work:
-            the right person, in the right role, at the right time.
-          </p>
+        <div class="container founder__grid">
+          <div class="founder__portrait">
+            <img
+              src="${SITE.founderPhoto}"
+              alt="${SITE.founder}, Founder of ${SITE.name}"
+              width="800"
+              height="800"
+            />
+          </div>
+          <div>
+            <h2>Our focus</h2>
+            <p>
+              FINA Consultancy is founded by ${SITE.founder} and based in ${SITE.location}. We work with
+              employers who need talent acquisition and HR support, and with candidates seeking structured
+              pathways toward suitable opportunities.
+            </p>
+            <p>
+              Our positioning is simple: <strong>${SITE.positioning}</strong>. The philosophy behind our work:
+              the right person, in the right role, at the right time.
+            </p>
+          </div>
         </div>
       </section>
       <section class="section section--muted">

@@ -30,16 +30,13 @@
   color: inherit;
 }
 
-.brand__mark {
-  width: 2.5rem;
-  height: 2.5rem;
+.brand__logo {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
   border-radius: 12px;
-  background: var(--color-primary);
-  color: #fff;
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  font-family: var(--font-display);
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--color-border);
 }
 
 .brand__text {
@@ -466,15 +463,29 @@
 
 .founder__portrait {
   width: 11rem;
-  aspect-ratio: 4/5;
+  aspect-ratio: 1;
   border-radius: var(--radius-lg);
-  background: linear-gradient(160deg, var(--color-primary), var(--color-primary-dark));
-  display: grid;
-  place-items: center;
-  color: #fff;
-  font-size: 2.5rem;
-  font-family: var(--font-display);
+  overflow: hidden;
   box-shadow: var(--shadow-md);
+  background: var(--color-surface);
+}
+
+.founder__portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .founder__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .founder__portrait {
+    width: min(14rem, 100%);
+  }
 }
 
 .founder__role {
@@ -683,6 +694,16 @@
   grid-template-columns: 2fr 1fr 1fr;
   gap: 2rem;
   margin-bottom: 2rem;
+}
+
+.footer-logo {
+  width: 4.5rem;
+  height: 4.5rem;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #faf7f2;
+  margin-bottom: 0.85rem;
+  display: block;
 }
 
 .footer-brand {
