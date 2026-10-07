@@ -1,6 +1,17 @@
-# Fina-Landing-page-prototype
+# FINA Consultancy — Website Prototype
 
-A Vite-powered landing page prototype for the Fina finance product story.
+PRD-aligned marketing site prototype for **FINA Consultancy** (talent & HR across Manufacturing, Banking, Insurance). Static frontend only — no database or backend. Forms validate in the browser and show demo success states.
+
+## Pages
+
+| Route | Content |
+| --- | --- |
+| `/` | Full homepage (hero, pathways, services, industries, processes, FAQ, forms) |
+| `/about` | About FINA and entity summary |
+| `/services` | Employer & candidate services |
+| `/industries` | Manufacturing, Banking, Insurance |
+| `/candidates` | Candidate journey + resume form |
+| `/contact` | Contact details + forms |
 
 ## Development
 
@@ -9,11 +20,31 @@ npm ci
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173).
+Open http://localhost:5173
+
+## Production build & preview
 
 ```bash
-npm run build    # production build to dist/
-npm run preview  # preview production build
+npm run build
+npm run preview
 ```
 
-Cloud Agents use `.cursor/environment.json` to install dependencies and start the dev server on port **5173**.
+## Deploy (static)
+
+Build output is in `dist/`. Config included for:
+
+- **Netlify** — `netlify.toml`
+- **Vercel** — `vercel.json`
+
+Any static host works; configure SPA fallback so all routes serve `index.html`.
+
+## Demo limitations
+
+- Forms do not POST to a server (wire to your API, Formspree, or serverless handler for production).
+- Resume files are validated locally only.
+- Replace founder portrait placeholder and connect approved logo assets before launch.
+- Update `hello@finaconsultancy.in` when the domain is registered.
+
+## Analytics
+
+`data-track` attributes and `track()` in `src/utils/analytics.js` fire `fina:analytics` events (and log in dev). Swap for Google Analytics / Plausible in production.
