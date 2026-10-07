@@ -140,8 +140,13 @@ export function homePage() {
 
       <section class="section founder" id="founder">
         <div class="container founder__grid">
-          <div class="founder__portrait" role="img" aria-label="Portrait placeholder for Hima Ferin">
-            <span>HF</span>
+          <div class="founder__portrait">
+            <img
+              src="${SITE.founderPhoto}"
+              alt="${SITE.founder}, Founder of ${SITE.name}"
+              width="800"
+              height="800"
+            />
           </div>
           <div>
             <p class="eyebrow">Founder</p>

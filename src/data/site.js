@@ -10,6 +10,8 @@ export const SITE = {
   emailNote: "Professional domain email pending registration",
   linkedIn: "https://www.linkedin.com/in/hima-ferin/",
   founder: "Hima Ferin",
+  logo: "/images/fina-logo.jpg",
+  founderPhoto: "/images/hima-ferin.jpg",
   sectors: ["Manufacturing", "Banking", "Insurance"],
 };
 

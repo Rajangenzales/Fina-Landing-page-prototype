@@ -14,7 +14,13 @@ export function renderHeader(activePath) {
     <header class="site-header" data-header>
       <div class="container site-header__inner">
         <a href="/" class="brand" aria-label="${escapeHtml(SITE.name)} home">
-          <span class="brand__mark" aria-hidden="true">F</span>
+          <img
+            class="brand__logo"
+            src="${SITE.logo}"
+            alt=""
+            width="1254"
+            height="1254"
+          />
           <span class="brand__text">
             <span class="brand__name">FINA</span>
             <span class="brand__sub">Consultancy</span>
@@ -43,6 +49,13 @@ export function renderFooter() {
     <footer class="site-footer">
       <div class="container site-footer__grid">
         <div>
+          <img
+            class="footer-logo"
+            src="${SITE.logo}"
+            alt="${escapeHtml(SITE.name)}"
+            width="1254"
+            height="1254"
+          />
           <p class="footer-brand">${escapeHtml(SITE.name)}</p>
           <p class="footer-tagline">${escapeHtml(SITE.tagline)}</p>
           <p class="footer-meta">${escapeHtml(SITE.location)} · Serving ${escapeHtml(SITE.reach)}</p>

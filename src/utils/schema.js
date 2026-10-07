@@ -6,12 +6,16 @@ export function organizationJsonLd() {
     "@type": "Organization",
     name: SITE.name,
     url: "https://finaconsultancy.in/",
+    logo: `https://finaconsultancy.in${SITE.logo}`,
+    image: `https://finaconsultancy.in${SITE.logo}`,
     description:
       "PAN-India talent and HR consultancy serving organisations and candidates across Manufacturing, Banking and Insurance.",
     founder: {
       "@type": "Person",
       name: SITE.founder,
       jobTitle: "Founder",
+      image: `https://finaconsultancy.in${SITE.founderPhoto}`,
+      sameAs: SITE.linkedIn,
     },
     address: {
       "@type": "PostalAddress",
