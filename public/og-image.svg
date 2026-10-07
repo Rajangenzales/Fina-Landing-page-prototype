@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#faf7f2"/>
-  <rect x="60" y="60" width="1080" height="510" rx="24" fill="#1f4d3a"/>
-  <text x="100" y="200" fill="#e8d9b5" font-family="Georgia, serif" font-size="42" font-weight="600">FINA Consultancy</text>
+  <rect width="1200" height="630" fill="#F7F2E7"/>
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="#07583F"/>
+  <text x="100" y="200" fill="#E3CC9A" font-family="Georgia, serif" font-size="42" font-weight="600">FINA Consultancy</text>
   <text x="100" y="290" fill="#ffffff" font-family="Georgia, serif" font-size="56" font-weight="700">The Right Talent. The Right Role.</text>
   <text x="100" y="360" fill="#ffffff" font-family="Georgia, serif" font-size="56" font-weight="700">The Right Time.</text>
-  <text x="100" y="450" fill="#d8e8df" font-family="sans-serif" font-size="28">Manufacturing · Banking · Insurance · PAN India</text>
+  <text x="100" y="450" fill="#EFE8DB" font-family="sans-serif" font-size="28">Manufacturing · Banking · Insurance · PAN India</text>
 </svg>
